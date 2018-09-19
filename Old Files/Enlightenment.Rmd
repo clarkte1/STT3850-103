@@ -1,0 +1,37 @@
+\documentclass{article}
+
+\begin{document}
+
+Hello World!
+
+$$\bar{bar} = \sum_{i=1}^{n} \ frac{x}{n}$$
+<<>>=
+ages <- c(45, 72, 91, 86, 85, 81, 64)
+mean(ages)
+sd(mean)
+@
+
+The average of the ages is \Sexpr{mean(ages)}
+
+      Parameter   Statistics R commands
+Mean: $\mu$ $\bar{X}$ mean()
+Stadard Deviation: $\sigma$ $S$ sd()
+
+$\alpha$-value is the percent chance of a type one error.
+$\alpha$-value is generally set to 5%
+
+If p-value < $\alpha$-value => 
+  reject $H_0$
+  Find evidence to support $H_A$
+  
+If p-value > $\alpha$-value =>
+  Fail to reject the $H_0$
+  Fail to find evidence to support $H_A$
+  
+Bar - categorical - geom_bar()
+Histogram - quanitive - geom_histogram()
+Density - quanitive - geom_density() 
+
+facet_wrap
+
+\end{document}

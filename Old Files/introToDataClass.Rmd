@@ -1,0 +1,21 @@
+---
+title: "Intro To data notes"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALSE, fig.align = "center")
+```
+
+* Use 'head()' and 'tail()'
+* Use "str()"
+
+```{r}
+library(openintro)
+library(moments)
+head(hsb2)
+str(hsb2)
+summary(hsb2)
+shewness(hsb2)
+```
+

@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\begin{document}
+
+
+Hello World!
+
+$\bar{bar} = \sum_{i=1}^{n} \ frac{x}{n}$
+
+<<>>=
+ages <- c(45, 72, 91, 86, 85, 81, 64)
+mean(ages)
+sd(ages)
+@
+
+<<echo = FALSE,  fig.width = 4, fig.height>>=
+boxplot(ages, col = "purple", title = "I AM A BOX PLOT")
+@
+
+
+The average of the ages is \Sexpr{round(mean(ages), 2)}
+
+Ryan wants to know how to spell statisticians spell
+
+\end{document}
